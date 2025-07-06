@@ -11,19 +11,18 @@
 <body>
   <header style="
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Это для выравнивания по центру */
   align-items: center;
-  padding: 10px 20px;
   height: 100px;
-  background-color: #d0f5c0; /* Светло-зелёный фон */
-  position: relative;
+  padding: 0 20px;
+  background-color: #d0f5c0; /* светло-зелёный фон */
 ">
-  <div style="flex: 1;"></div>
+  <!-- Логотип по центру -->
+  <h1 style="margin: 0; font-size: 32px;">Limonet</h1>
 
-  <h1 style="margin: 0 auto; font-size: 32px;">Limonet</h1>
-
-  <div style="position: absolute; right: 20px; top: 30px;">
-    <button onclick="setLanguage('ru')" style="padding: 6px 10px; font-size: 14px; margin-right: 5px;">RU</button>
+  <!-- Кнопки языка справа -->
+  <div style="display: flex; gap: 8px; position: absolute; right: 20px;">
+    <button onclick="setLanguage('ru')" style="padding: 6px 10px; font-size: 14px;">RU</button>
     <button onclick="setLanguage('uk')" style="padding: 6px 10px; font-size: 14px;">UA</button>
   </div>
 </header>

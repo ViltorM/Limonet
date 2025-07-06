@@ -22,21 +22,9 @@
   <h1 style="margin: 0; font-size: 28px;">Limonet</h1>
 
   <!-- Переключатели языка: RU и UA справа -->
-  <div 
-    style="
-      position: absolute; /* Абсолютное позиционирование справа */
-      right: 20px; 
-      top: 50%; 
-      transform: translateY(-50%); /* Центрировать вертикально */
-      display: flex; /* Горизонтальное расположение кнопок */
-      gap: 10px; /* Расстояние между кнопками */
-    "
-  >
-    <!-- Кнопка переключения на русский -->
-    <button onclick="setLang('ru')" style="padding: 5px 10px; font-size: 14px;">RU</button>
-
-    <!-- Кнопка переключения на украинский -->
-    <button onclick="setLang('ua')" style="padding: 5px 10px; font-size: 14px;">UA</button>
+  <div class="lang-switcher">
+    <button onclick="setLang('ru')">RU</button>
+    <button onclick="setLang('ua')">UA</button>
   </div>
 </header>
   <main>

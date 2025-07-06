@@ -10,7 +10,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #a5d6a7;
+  background: #81c784;
   padding: 10px 20px;
   position: relative; /* Обязательно нужно для позиционирования кнопок внутри */
 }

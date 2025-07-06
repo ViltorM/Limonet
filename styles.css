@@ -44,36 +44,18 @@ footer {
 }
 
 /* 🌐 Переключатель языка — горизонтально по умолчанию */
-.lang-switcher {
-    display: flex;
-    flex-direction: row;         /* По умолчанию горизонтально */
-    gap: 10px;
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%); /* Центр по вертикали в полоске */
-}
-
-/* 📱 На телефонах — вертикально, но по-прежнему справа */
 @media (max-width: 600px) {
-  header {
-    position: relative;
-  }
-
   .lang-switcher {
-    position: absolute;
-    top: 50%;
-    right: 10%; /* 💡 регулирует, как близко к центру */
-    transform: translateY(-50%);
     display: flex;
-    flex-direction: column;
-    align-items: flex-end; /* выравнивание по правому краю */
-    gap: 4px; /* 🔧 меньшее расстояние между кнопками */
+    flex-direction: column; /* вертикально */
+    align-items: flex-end; /* прижать к правому краю */
+    gap: 5px; /* расстояние между кнопками */
+    margin-right: 5px; /* немного отступ от правого края */
   }
 
   .lang-switcher button {
-    width: 48px;
-    padding: 5px 0;
-    font-size: 13px;
+    width: 50px;
+    padding: 6px 0;
+    font-size: 14px;
   }
 }

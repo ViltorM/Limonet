@@ -58,13 +58,16 @@ footer {
 @media (max-width: 600px) {
   .lang-switcher {
     display: flex;
-    flex-direction: column; /* Вертикальное размещение кнопок */
-    align-items: flex-end; /* Выравнивание по правому краю */
-    gap: 5px; /* Расстояние между кнопками */
-    position: absolute;
-    right: 20px; /* Отступ справа */
-    top: 50%; /* Центр по вертикали */
-    transform: translateY(-50%); /* Смещение для центрирования */
+    flex-direction: column; /* вертикально */
+    align-items: flex-end; /* прижать к правому краю */
+    gap: 5px; /* расстояние между кнопками */
+    margin-right: 5px; /* немного отступ от правого края */
+  }
+
+  .lang-switcher button {
+    width: 50px;
+    padding: 6px 0;
+    font-size: 14px;
   }
 }
 

@@ -49,7 +49,7 @@ footer {
     display: flex;
     flex-direction: column; /* вертикально */
     align-items: flex-end; /* прижать к правому краю */
-    gap: 4px; /* уменьшенное расстояние между кнопками */
+    gap: 2px; /* уменьшенное расстояние между кнопками */
     position: absolute;
     top: 50%;
     right: 20px;

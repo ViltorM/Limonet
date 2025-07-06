@@ -9,21 +9,32 @@
   <script defer src="script.js"></script>
 </head>
 <body>
-  <header style="
-  display: flex;
-  justify-content: center; /* Это для выравнивания по центру */
-  align-items: center;
-  height: 100px;
-  padding: 0 20px;
-  background-color: #d0f5c0; /* светло-зелёный фон */
-">
-  <!-- Логотип по центру -->
-  <h1 style="margin: 0; font-size: 32px;">Limonet</h1>
+  <header 
+  style="background-color: #c8f7c5; /* Светло-зелёный фон */
+         display: flex; 
+         justify-content: center; /* Центрируем заголовок */
+         align-items: center; 
+         position: relative; 
+         padding: 20px;">
 
-  <!-- Кнопки языка справа -->
-  <div style="display: flex; gap: 8px; position: absolute; right: 20px;">
-    <button onclick="setLanguage('ru')" style="padding: 6px 10px; font-size: 14px;">RU</button>
-    <button onclick="setLanguage('uk')" style="padding: 6px 10px; font-size: 14px;">UA</button>
+  <!-- Название сайта по центру -->
+  <h1 style="margin: 0; font-size: 28px;">Limonet</h1>
+
+  <!-- Кнопки переключения языка справа -->
+  <div style="position: absolute; right: 20px; top: 20px;">
+    <!-- Кнопка: Русский -->
+    <button 
+      onclick="setLanguage('ru'); translate();" 
+      style="padding: 5px 10px; font-size: 14px; margin-right: 5px;">
+      RU
+    </button>
+
+    <!-- Кнопка: Украинский -->
+    <button 
+      onclick="setLanguage('uk'); translate();" 
+      style="padding: 5px 10px; font-size: 14px;">
+      UA
+    </button>
   </div>
 </header>
   <main>

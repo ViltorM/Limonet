@@ -48,6 +48,7 @@ footer {
   .lang-switcher {
     display: flex;
     flex-direction: column; /* вертикально */
+    position: absolute; /* позиционируем относительно блока */
     right: 10px; /* отступ от правого края (можно подогнать) */
     gap: 4px; /* уменьшенное расстояние между кнопками */
     position: absolute;

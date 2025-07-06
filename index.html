@@ -9,21 +9,23 @@
   <script defer src="script.js"></script>
 </head>
 <body>
-  <header style="display: flex; justify-content: center; align-items: center; padding: 15px 20px; background-color: #d4f7d4; height: 80px; position: relative;">
-  <!-- Логотип строго по центру -->
+  <header style="display: flex; justify-content: center; align-items: center; background-color: #b6f2b0; padding: 15px 20px; position: relative; height: 80px;">
+  
+  <!-- Название сайта по центру -->
   <h1 style="margin: 0; font-size: 28px;">Limonet</h1>
-
-  <!-- Кнопки справа, на одном уровне -->
-  <div style="position: absolute; right: 20px; top: 20px;">
-    <button onclick="setLanguage('ru')" style="padding: 6px 10px; font-size: 14px; margin-right: 5px;">RU</button>
-    <button onclick="setLanguage('uk')" style="padding: 6px 10px; font-size: 14px;">UA</button>
+  
+  <!-- Кнопки переключения языка (справа, в один ряд) -->
+  <div style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); display: flex; gap: 5px;">
+    <button onclick="setLanguage('ru')" style="padding: 5px 10px; font-size: 14px;">RU</button>
+    <button onclick="setLanguage('uk')" style="padding: 5px 10px; font-size: 14px;">UA</button>
   </div>
 </header>
 
+<!-- Скрипт переключения языка -->
 <script>
   function setLanguage(lang) {
     localStorage.setItem('language', lang);
-    location.reload(); // обновит язык
+    translate(); // Функция перевода — должна быть у тебя уже в коде
   }
 </script>
   <main>

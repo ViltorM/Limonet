@@ -9,34 +9,13 @@
   <script defer src="script.js"></script>
 </head>
 <body>
-  <header 
-  style="background-color: #c8f7c5; /* Светло-зелёный фон */
-         display: flex; 
-         justify-content: center; /* Центрируем заголовок */
-         align-items: center; 
-         position: relative; 
-         padding: 20px;">
-
-  <!-- Название сайта по центру -->
-  <h1 style="margin: 0; font-size: 28px;">Limonet</h1>
-
-  <!-- Кнопки переключения языка справа -->
-  <div style="position: absolute; right: 20px; top: 20px;">
-    <!-- Кнопка: Русский -->
-    <button 
-      onclick="setLanguage('ru'); translate();" 
-      style="padding: 5px 10px; font-size: 14px; margin-right: 5px;">
-      RU
-    </button>
-
-    <!-- Кнопка: Украинский -->
-    <button 
-      onclick="setLanguage('uk'); translate();" 
-      style="padding: 5px 10px; font-size: 14px;">
-      UA
-    </button>
-  </div>
-</header>
+  <header>
+    <img src="logo.png" alt="Limonet" class="logo" />
+    <div class="lang-switcher">
+      <button onclick="setLang('ru')">🇷🇺</button>
+      <button onclick="setLang('ua')">🇺🇦</button>
+    </div>
+  </header>
   <main>
     <section class="products" id="products"></section>
     <section class="cart" id="cart">
@@ -66,3 +45,4 @@
   </footer>
 </body>
 </html>
+

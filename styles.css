@@ -51,10 +51,9 @@ footer {
     position: absolute; /* позиционируем относительно блока */
     right: 10px; /* отступ от правого края (можно подогнать) */
     gap: 4px; /* уменьшенное расстояние между кнопками */
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
+    top: 50%; /* по вертикали по центру */
+    transform: translateY(-50%); /* выровнять по вертикали идеально */
+    gap: 5px; /* расстояние между кнопками */
   }
 
   .lang-switcher button {

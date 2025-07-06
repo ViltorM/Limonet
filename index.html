@@ -10,9 +10,9 @@
 </head>
 <body>
   <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
-  <!-- Левый блок: логотип -->
+  <!-- Левый блок: логотип (БЕЗ текста) -->
   <div style="flex: 1;">
-    <img src="logo.png" alt="Limonet" class="logo" style="height: 50px;" />
+    <img src="logo.png" alt="Limonet" style="height: 50px;" />
   </div>
 
   <!-- Центр: название -->
@@ -20,11 +20,11 @@
     <h1 style="margin: 0; font-size: 28px;">Limonet</h1>
   </div>
 
-  <!-- Правый блок: языки -->
+  <!-- Правый блок: компактные кнопки языка -->
   <div style="flex: 1; text-align: right;">
     <div class="lang-switcher">
-      <button onclick="setLang('ru')">🇷🇺</button>
-      <button onclick="setLang('ua')">🇺🇦</button>
+      <button class="lang-btn" onclick="setLang('ru')">🇷🇺</button>
+      <button class="lang-btn" onclick="setLang('ua')">🇺🇦</button>
     </div>
   </div>
 </header>

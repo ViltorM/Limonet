@@ -7,15 +7,13 @@
   <title>Limonet</title>
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
-</head>
-<body>
-  <header>
-    <img src="logo.png" alt="Limonet" class="logo" />
-    <div class="lang-switcher">
-      <button onclick="setLang('ru')">🇷🇺</button>
-      <button onclick="setLang('ua')">🇺🇦</button>
-    </div>
-  </header>
+<header style="display: flex; justify-content: center; align-items: center; background-color: #d4edc9; padding: 15px 20px; position: relative;">
+  <img src="logo.png" alt="Limonet" style="height: 40px;" />
+  <div style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); display: flex; gap: 10px;">
+    <button onclick="setLang('ru')" style="padding: 5px 10px; font-size: 14px;">RU</button>
+    <button onclick="setLang('ua')" style="padding: 5px 10px; font-size: 14px;">UA</button>
+  </div>
+</header>
   <main>
     <section class="products" id="products"></section>
     <section class="cart" id="cart">

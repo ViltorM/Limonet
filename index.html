@@ -7,10 +7,34 @@
   <title>Limonet</title>
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
-<header style="display: flex; justify-content: center; align-items: center; background-color: #d4edc9; padding: 15px 20px; position: relative;">
+<header 
+  style="
+    display: flex; /* Выровнять элементы по горизонтали */
+    justify-content: center; /* Центрировать логотип */
+    align-items: center; /* Центрировать по вертикали */
+    background-color: #d4edc9; /* Светло-зелёный фон шапки */
+    padding: 15px 20px; /* Отступы внутри шапки */
+    position: relative; /* Нужно для позиционирования кнопок языка справа */
+  "
+>
+  <!-- Логотип по центру -->
   <img src="logo.png" alt="Limonet" style="height: 40px;" />
-  <div style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); display: flex; gap: 10px;">
+
+  <!-- Переключатели языка: RU и UA справа -->
+  <div 
+    style="
+      position: absolute; /* Абсолютное позиционирование справа */
+      right: 20px; 
+      top: 50%; 
+      transform: translateY(-50%); /* Центрировать вертикально */
+      display: flex; /* Горизонтальное расположение кнопок */
+      gap: 10px; /* Расстояние между кнопками */
+    "
+  >
+    <!-- Кнопка переключения на русский -->
     <button onclick="setLang('ru')" style="padding: 5px 10px; font-size: 14px;">RU</button>
+
+    <!-- Кнопка переключения на украинский -->
     <button onclick="setLang('ua')" style="padding: 5px 10px; font-size: 14px;">UA</button>
   </div>
 </header>

@@ -11,7 +11,6 @@ header {
   align-items: center;
   justify-content: space-between;
   background: #424242; /* графитовый карбон */
-  color: #fff;
   padding: 10px 20px;
   position: relative; /* Обязательно нужно для позиционирования кнопок внутри */
 }

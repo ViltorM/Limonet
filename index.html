@@ -9,13 +9,25 @@
   <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Limonet" class="logo" />
+  <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+  <!-- Левый блок: логотип -->
+  <div style="flex: 1;">
+    <img src="logo.png" alt="Limonet" class="logo" style="height: 50px;" />
+  </div>
+
+  <!-- Центр: название -->
+  <div style="flex: 1; text-align: center;">
+    <h1 style="margin: 0; font-size: 28px;">Limonet</h1>
+  </div>
+
+  <!-- Правый блок: языки -->
+  <div style="flex: 1; text-align: right;">
     <div class="lang-switcher">
       <button onclick="setLang('ru')">🇷🇺</button>
       <button onclick="setLang('ua')">🇺🇦</button>
     </div>
-  </header>
+  </div>
+</header>
   <main>
     <section class="products" id="products"></section>
     <section class="cart" id="cart">

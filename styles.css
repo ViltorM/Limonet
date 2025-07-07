@@ -6,6 +6,11 @@ body {
     color: #333;
 }
 
+h1 {
+  color: green;
+  text-align: center;
+}
+
 header {
   display: flex;
   align-items: center;

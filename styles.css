@@ -77,3 +77,12 @@ footer {
   align-items: center;
   gap: 10px;
 }
+
+.lang-switcher {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px;
+}

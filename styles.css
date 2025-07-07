@@ -88,7 +88,7 @@ footer {
   height: 55px;
   margin-right: -6px; /* перекрытие текста */
   position: relative;
-  top: -4px; /* поднять логотип */
+  top: -6px; /* поднять логотип */
   z-index: 2; /* чтобы был поверх текста */
 }
 

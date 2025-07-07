@@ -93,8 +93,7 @@ footer {
 }
 
 .site-title {
+  font-family: 'Pacifico', cursive;
   font-size: 28px;
   margin: 0;
-  position: relative;
-  z-index: 1;
 }

@@ -80,11 +80,11 @@ footer {
 .logo-block {
   display: flex;
   align-items: center;
-  gap: 10px; /* расстояние между логотипом и текстом */
+  gap: 5px; /* расстояние между логотипом и текстом */
 }
 
 .logo-img {
-  height: 50px;
+  height: 60px;
   width: auto;
 }
 

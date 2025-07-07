@@ -86,7 +86,7 @@ footer {
 
 .logo-img {
   height: 70px;
-  margin-right: -7px; /* перекрытие текста */
+  margin-right: -8px; /* перекрытие текста */
   position: relative;
   top: -8px; /* поднять логотип */
   z-index: 2; /* чтобы был поверх текста */

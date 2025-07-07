@@ -7,24 +7,18 @@
   <title>Limonet</title>
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
-<header 
-  style="
-    display: flex; /* Выровнять элементы по горизонтали */
-    justify-content: center; /* Центрировать логотип */
-    align-items: center; /* Центрировать по вертикали */
-    background-color: #d4edc9; /* Светло-зелёный фон шапки */
-    padding: 15px 20px; /* Отступы внутри шапки */
-    position: relative; /* Нужно для позиционирования кнопок языка справа */
-    height: 80px;
-  "
->
-  <!-- Логотип по центру -->
-  <h1 style="margin: 0; font-size: 28px;">Limonet</h1>
+<header class="site-header">
 
-  <!-- Переключатели языка: RU и UA справа -->
-  <div class="lang-switcher">
-    <button onclick="setLang('ru')">RU</button>
-    <button onclick="setLang('ua')">UA</button>
+  <!-- 🔸 Центрированная часть: логотип + название -->
+  <div class="logo-center">
+    <img src="images/logo.png" class="logo" alt="Логотип Limonet" />
+    <h1 class="site-title">Limonet</h1> <!-- Название бренда — НЕ переводится -->
+  </div>
+
+  <!-- 🔸 Переключатель языка — отображается справа -->
+  <div class="lang-switch">
+    <button onclick="setLanguage('ru')">RU</button>
+    <button onclick="setLanguage('ua')">UA</button>
   </div>
 </header>
   <main>

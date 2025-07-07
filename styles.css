@@ -76,3 +76,20 @@ footer {
     margin: 0;
   }
 }
+
+.logo-block {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* расстояние между логотипом и текстом */
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 28px;
+  color: black; /* сделаем чёрным, как ты хотел */
+}

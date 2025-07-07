@@ -7,56 +7,6 @@
   <title>Limonet</title>
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
-<header class="site-header">
-
-  <!-- 🔸 Центрированная часть: логотип + название -->
-  <div class="logo-center">
-    <img src="images/logo.png" class="logo" alt="Логотип Limonet" />
-    <h1 class="site-title">Limonet</h1> <!-- Название бренда — НЕ переводится -->
-  </div>
-
-  <!-- 🔸 Переключатель языка — отображается справа -->
-  <div class="lang-switch">
-    <button onclick="setLanguage('ru')">RU</button>
-    <button onclick="setLanguage('ua')">UA</button>
-  </div>
-</header>
-  <main>
-    <section class="products" id="products"></section>
-    <section class="cart" id="cart">
-      <h2>🛒 <span data-i18n="cart_title">Корзина</span></h2>
-      <ul id="cart-items"></ul>
-      <p><span data-i18n="total">Сумма</span>: <span id="cart-total">0</span> грн</p>
-    </section>
-    <section class="order-form">
-      <h2 data-i18n="place_order">Оформить заказ</h2>
-      <form id="order-form">
-        <input type="text" name="fio" placeholder="ФИО" required />
-        <input type="tel" name="phone" placeholder="Телефон" required />
-        <input type="text" name="city" placeholder="Населённый пункт" required />
-        <input type="text" name="post" placeholder="Отделение почты" required />
-        <select name="payment" required>
-          <option value="" disabled selected data-i18n="choose_payment">Выберите способ оплаты</option>
-          <option value="card" data-i18n="card_payment">На карту</option>
-          <option value="cod" data-i18n="cod_payment">Наложенный платеж</option>
-        </select>
-        <textarea name="comment" placeholder="Комментарий..."></textarea>
-        <button type="submit" data-i18n="submit_order">Отправить заказ</button>
-      </form>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 Limonet</p>
-  </footer>
-</body>
-</html><!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Limonet</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
 <header 
   style="
     display: flex; /* Выровнять элементы по горизонтали */
@@ -106,4 +56,3 @@
   </footer>
 </body>
 </html>
-

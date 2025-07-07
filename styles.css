@@ -85,8 +85,8 @@ footer {
 }
 
 .logo-img {
-  height: 36px;
-  margin-right: -8px; /* перекрытие текста */
+  height: 55px;
+  margin-right: -3px; /* перекрытие текста */
   position: relative;
   top: -4px; /* поднять логотип */
   z-index: 2; /* чтобы был поверх текста */

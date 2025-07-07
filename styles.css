@@ -17,6 +17,7 @@ header {
 
 .logo {
     height: 40px;
+    height: auto;
 }
 
 .products, .cart, .order-form {

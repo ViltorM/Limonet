@@ -17,6 +17,7 @@ header {
 
 .logo {
     height: 40px;
+    height: auto;
 }
 
 .products, .cart, .order-form {
@@ -60,4 +61,19 @@ footer {
   padding: 5px 10px;
   font-size: 14px;
   cursor: pointer;
+}
+
+.site-header {
+  position: relative; /* Чтобы .lang-switch можно было выровнять через absolute */
+  display: flex;
+  justify-content: center; /* Центруем логотип с названием */
+  align-items: center;
+  padding: 20px;
+  background-color: #d7efcc; /* Светло-зелёный фон */
+}
+
+.logo-center {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

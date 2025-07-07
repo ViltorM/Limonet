@@ -80,17 +80,21 @@ footer {
 .logo-block {
   display: flex;
   align-items: center;
-  gap: 2px; /* расстояние между логотипом и текстом */
+  justify-content: center;
+  position: relative;
 }
 
 .logo-img {
-  height: 70px;
+  height: 36px;
+  margin-right: -8px; /* перекрытие текста */
   position: relative;
-  top: -2px; /* ⬆️ Чуть выше по вертикали */
+  top: -4px; /* поднять логотип */
+  z-index: 2; /* чтобы был поверх текста */
 }
 
 .site-title {
-  margin: 0;
   font-size: 28px;
-  color: black; /* сделаем чёрным, как ты хотел */
+  margin: 0;
+  position: relative;
+  z-index: 1;
 }

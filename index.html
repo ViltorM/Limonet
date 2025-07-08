@@ -16,28 +16,27 @@
 
 <body>
   <header 
+  <header 
   style="
-    display: flex; /* Выровнять элементы по горизонтали */
-    justify-content: center; /* Центрировать логотип */
-    align-items: center; /* Центрировать по вертикали */
-    background-color: #d4edc9; /* Светло-зелёный фон шапки */
-    padding: 15px 20px; /* Отступы внутри шапки */
-    position: relative; /* Нужно для позиционирования кнопок языка справа */
-    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d4edc9;
+    padding: 15px 20px;
+    position: relative;
   "
 >
-  <!-- Логотип по центру -->
- <div class="logo-block">
-  <img src="logo.png" class="logo-img" alt="Логотип Limonet" />
-  <h1 class="site-title">Limonet</h1>
-</div>
+  <!-- Логотип и название -->
+  <div class="logo-block" style="display: flex; align-items: center; gap: 10px;">
+    <img src="logo.png" class="logo-img" alt="Логотип Limonet" style="height: 50px;" />
+    <h1 class="site-title">Limonet</h1>
+  </div>
 
   <!-- Подпись под логотипом с переводом -->
-  <p class="site-subtitle" data-translate="logoSubtitle"></p>
-</div>
-    
-  <!-- Переключатели языка: RU и UA справа -->
-  <div class="lang-switcher">
+  <p class="site-subtitle" data-translate="logoSubtitle" style="margin: 5px 0 10px; font-size: 16px; text-align: center;"></p>
+
+  <!-- Переключатели языка -->
+  <div class="lang-switcher" style="position: absolute; top: 15px; right: 20px;">
     <button onclick="setLang('ru')">RU</button>
     <button onclick="setLang('ua')">UA</button>
   </div>

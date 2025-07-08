@@ -55,7 +55,8 @@ const translations = {
     choose_payment: "Выберите способ оплаты",
     card_payment: "На карту",
     cod_payment: "Наложенный платеж",
-    submit_order: "Отправить заказ"
+    submit_order: "Отправить заказ", 
+    logoSubtitle: "Футляры и кейсы для разных нужд"
   },
   ua: {
     add_to_cart: "Додати до кошика",
@@ -65,7 +66,8 @@ const translations = {
     choose_payment: "Оберіть спосіб оплати",
     card_payment: "На картку",
     cod_payment: "Післяплата",
-    submit_order: "Надіслати замовлення"
+    submit_order: "Надіслати замовлення",
+    logoSubtitle: "Футляри та кейси для різних потреб"
   }
 };
 
